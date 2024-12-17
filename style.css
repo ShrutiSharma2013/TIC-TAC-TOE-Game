@@ -1,0 +1,150 @@
+body {
+  background: #FCDCAF;
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  text-align: center;
+}
+.button {
+  cursor: pointer;
+}
+.start-new-game {
+  width: 165px;
+  height: 45px;
+  line-height: 45px;
+  margin: 30px auto;
+  color: #fff;
+  border-radius: 50em;
+  position: relative;
+  text-transform: uppercase;
+  background: #fc7169;
+  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.07);
+}
+.start-new-game span {
+  position: absolute;
+  display: block;
+  margin: 0px 22px;
+  transform: translateX(0);
+  transition: 0.5s;
+}
+.start-new-game span:hover {
+  transform: translateX(8px);
+}
+.title {
+  margin: 30px auto;
+  font-size: 2.6em;
+}
+.winner-message {
+  font-size: 2.3em;
+}
+.container {
+  min-width: 400px;
+}
+.popup {
+  position: fixed;
+  left: 0;
+  display: flex;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(94, 110, 141, 0.9);
+  align-items: start;
+  justify-content: center;
+  z-index: 100;
+}
+.popup .popup-container {
+  position: relative;
+  width: 80%;
+  margin-top: 25vh;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  max-width: 450px;
+  border-radius: 4px;
+}
+.popup .popup-container p {
+  display: block;
+  margin: 40px auto;
+  font-size: 2.5em;
+  color: #a0acc1;
+}
+.popup .buttons {
+  display: flex;
+  justify-content: space-between;
+}
+.popup .buttons div {
+  width: 100%;
+  height: 50px;
+}
+.popup .button-x {
+  background: #fd7d74;
+  position: relative;
+  line-height: 50px;
+  font-size: 2.85em;
+  border-bottom-left-radius: 4px;
+  color: #fff;
+}
+.popup .button-o {
+  background: #bec6d4;
+  line-height: 50px;
+  position: relative;
+  font-size: 2.85em;
+  color: #fff;
+  border-bottom-right-radius: 4px;
+}
+.popup span {
+  display: block;
+  transform: translateX(0);
+  transition: 0.5s;
+}
+.popup span:hover {
+  transform: translateX(15px);
+}
+.board {
+  width: 360px;
+  height: 360px;
+  background-color: #4ba884;
+  margin: 30px auto;
+  display: flex;
+  border-radius: 3px;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.07);
+}
+.field {
+  position: relative;
+  display: flex;
+  width: 300px;
+  height: 300px;
+  align-items: center;
+  flex-direction: column;
+}
+.field .row {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.field .row.center {
+  border-bottom: 3px solid #fff;
+  border-top: 3px solid #fff;
+}
+.field .cell {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  position: relative;
+}
+.field .cell span {
+  line-height: 98px;
+  font-size: 63px;
+}
+.field .cell.center {
+  border-left: 3px solid #fff;
+  border-right: 3px solid #fff;
+}
+.field .cell.red {
+  color: #fc7169;
+}
+.field .cell.green {
+  color: #194369;
+}
